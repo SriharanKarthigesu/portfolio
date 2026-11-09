@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal Portfolio of Sriharan Karthigesu - Software Developer and Tech Enthusiast" />
+  <title>Sriharan Karthigesu | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts (Optional fallback to system-ui) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Background Glow Accents -->
+  <div class="glow-bg glow-1"></div>
+  <div class="glow-bg glow-2"></div>
+
+  <!-- Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo">
+        <span class="logo-badge">SK</span>
+        <span class="logo-text">Sriharan<span class="accent-dot">.</span></span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Languages & Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Timeline</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a href="#contact" class="btn btn-sm btn-primary">Let's Talk</a>
+        </div>
+      </nav>
+
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+    <!-- Apple-style Scroll Progress Bar -->
+    <div class="scroll-progress-container">
+      <div class="scroll-progress-bar" id="scroll-progress"></div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="status-pill">
+            <span class="status-indicator"></span>
+            <span>Available for new opportunities</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Sriharan Karthigesu</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            UI/UX Engineer & Frontend Developer
+          </p>
+
+          <p class="hero-desc">
+            Bridging user research, intuitive wireframing, and modern frontend technologies to craft high-impact digital experiences. Dedicated to building responsive, human-centered web and mobile products with clean code.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">
+              <span>Explore My Work</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+          </div>
+
+          <!-- Quick Social & Contact Links -->
+          <div class="social-links">
+            <a href="mailto:karthi.sriharan@gmail.com" class="social-icon" aria-label="Email" title="Email Sriharan">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+            <a href="tel:+94778379372" class="social-icon" aria-label="Phone" title="Call Sriharan (+94 77 837 9372)">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/sriharan-karthigesu-2919591bb/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn" title="LinkedIn Profile">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="https://github.com/SriharanKarthigesu" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub" title="GitHub Profile">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="code-terminal-card">
+            <div class="terminal-header">
+              <div class="dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <div class="terminal-title">sriharan.config.ts</div>
+            </div>
+            <div class="terminal-body">
+              <pre><code><span class="c-keyword">const</span> <span class="c-variable">engineer</span> = {
+  <span class="c-prop">name</span>: <span class="c-str">'Sriharan Karthigesu'</span>,
+  <span class="c-prop">role</span>: <span class="c-str">'UI/UX Engineer & Frontend Dev'</span>,
+  <span class="c-prop">experience</span>: [<span class="c-str">'Freelancing UI/UX'</span>, <span class="c-str">'Tech Venturas Global'</span>],
+  <span class="c-prop">education</span>: <span class="c-str">'BSc (Hons) Computer Science'</span>,
+  <span class="c-prop">location</span>: <span class="c-str">'Colombo, Sri Lanka'</span>,
+  <span class="c-func">craftProduct</span>: (<span class="c-arg">userNeed</span>) =&gt; {
+    <span class="c-keyword">return</span> userNeed
+      .<span class="c-func">research</span>()
+      .<span class="c-func">wireframe</span>()
+      .<span class="c-func">prototype</span>()
+      .<span class="c-func">codeResponsiveUI</span>();
+  }
+};</code></pre>
+            </div>
+            <div class="terminal-footer">
+              <span class="terminal-badge">🎨 UI/UX Design</span>
+              <span class="terminal-badge">💻 Frontend Dev</span>
+              <span class="terminal-badge">⚡ Design Systems</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-tag">About Me</p>
+          <h2 class="section-title">Who I Am</h2>
+          <p class="section-subtitle">A blend of user experience design, frontend development, and human-centered problem solving.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card main-bio">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+            <h3>UI/UX Engineer & Frontend Creator</h3>
+            <p>
+              I am Sriharan Karthigesu, a UI/UX Engineer and Frontend Developer based in Colombo, Sri Lanka. I specialize in designing intuitive, aesthetically pleasing user interfaces and translating them into robust, responsive code.
+            </p>
+            <p>
+              With 12 months of industry experience as a UI/UX Engineer Intern at <strong>Tech Venturas Global (Pvt.) Ltd</strong> and ongoing <strong>freelance UI/UX</strong> projects, I bridge the gap between design systems, user research, and technical execution.
+            </p>
+            <p>
+              Currently pursuing my <strong>BSc (Hons) Computer Science</strong> at SLIIT (affiliated with University of Bedfordshire, UK), holding a Certificate of Higher Education in Business Information Systems (IIT / University of Westminster, UK), and an alumnus of <strong>Royal College Colombo - 07</strong>.
+            </p>
+          </div>
+
+          <div class="about-card">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <h4>Adaptability</h4>
+            <p>Quickly adapting to evolving design paradigms, project requirements, and modern tech stacks with curiosity.</p>
+          </div>
+
+          <div class="about-card">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+            </div>
+            <h4>Time Management</h4>
+            <p>Structured workflow management ensuring deliverables, wireframes, and prototypes arrive on schedule.</p>
+          </div>
+
+          <div class="about-card">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <h4>Attention to Detail</h4>
+            <p>Obsessive focus on micro-interactions, layout consistency, typography scale, and seamless accessibility.</p>
+          </div>
+
+          <div class="about-card">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            </div>
+            <h4>Effective Communication</h4>
+            <p>Translating user feedback into actionable design choices and collaborating smoothly with cross-functional teams.</p>
+          </div>
+
+          <div class="about-card">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <h4>Creative & Critical Thinking</h4>
+            <p>Evaluating complex workflows to engineer simpler, cleaner, and more intuitive user experiences.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Languages & Tech Stack Section -->
+    <section class="section bg-tint" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-tag">Expertise</p>
+          <h2 class="section-title">Skills & Capabilities</h2>
+          <p class="section-subtitle">Core hard skills, UI/UX methodologies, frontend technologies, and workflow tools.</p>
+        </div>
+
+        <div class="skills-wrapper">
+          <!-- Hard Skills / UI/UX -->
+          <div class="skill-category">
+            <h3 class="category-title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/></svg>
+              UI/UX & Product Design
+            </h3>
+            <div class="skill-tags">
+              <div class="skill-badge">
+                <span class="badge-dot dot-cyan"></span>
+                <span class="skill-name">Prototyping</span>
+              </div>
+              <div class="skill-badge">
+                <span class="badge-dot dot-blue"></span>
+                <span class="skill-name">Wireframing</span>
+              </div>
+              <div class="skill-badge">
+                <span class="badge-dot dot-purple"></span>
+                <span class="skill-name">Design Systems</span>
+              </div>
+              <div class="skill-badge">
+                <span class="badge-dot dot-pink"></span>
+                <span class="skill-name">User Research</span>
+              </div>
+              <div class="skill-badge">
+                <span class="badge-dot dot-green"></span>
+                <span class="skill-name">Responsive Design</span>
+              </div>
+              <div class="skill-badge">
+                <span class="badge-dot dot-orange"></span>
+                <span class="skill-name">Mobile-Optimized Design</span>
+              </div>
+              <div class="skill-badge">
+                <span class="badge-dot dot-cyan"></span>
+                <span class="skill-name">Frontend Development</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Frontend & Code Technologies -->
+          <div class="skill-category">
+            <h3 class="category-title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              Frontend & Core Languages
+            </h3>
+            <div class="skill-tags">
+              <div class="skill-badge">
+                <span class="badge-dot dot-orange"></span>
+                <span class="skill-name">HTML5 & Semantic Web</span>
+              </div>
+              <div class="skill-badge">
+                <span class="badge-dot dot-blue"></span>
+                <span class="skill-name">Modern CSS3 (Flex/Grid)</span>
+              </div>
+              <div class="skill-badge">
+                <span class="badge-dot dot-yellow"></span>
+                <span class="skill-name">JavaScript (ES6+)</span>
+              </div>
+              <div class="skill-badge">
+                <span class="badge-dot dot-cyan"></span>
+                <span class="skill-name">TypeScript</span>
+              </div>
+              <div class="skill-badge">
+                <span class="badge-dot dot-cyan"></span>
+                <span class="skill-name">React.js</span>
+              </div>
+              <div class="skill-badge">
+                <span class="badge-dot dot-green"></span>
+                <span class="skill-name">Python</span>
+              </div>
+              <div class="skill-badge">
+                <span class="badge-dot dot-purple"></span>
+                <span class="skill-name">SQL</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tools & Software -->
+          <div class="skill-category">
+            <h3 class="category-title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+              Design & Dev Tools
+            </h3>
+            <div class="skill-tags">
+              <div class="skill-badge">
+                <span class="badge-dot dot-pink"></span>
+                <span class="skill-name">Figma</span>
+              </div>
+              <div class="skill-badge">
+                <span class="badge-dot dot-blue"></span>
+                <span class="skill-name">Adobe Photoshop</span>
+              </div>
+              <div class="skill-badge">
+                <span class="badge-dot dot-orange"></span>
+                <span class="skill-name">Git & GitHub</span>
+              </div>
+              <div class="skill-badge">
+                <span class="badge-dot dot-cyan"></span>
+                <span class="skill-name">VS Code</span>
+              </div>
+              <div class="skill-badge">
+                <span class="badge-dot dot-green"></span>
+                <span class="skill-name">Cross-Device Testing</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-tag">Portfolio</p>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Here are some of the key projects I have built and collaborated on.</p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="ecommerce">E-Commerce</button>
+          <button class="filter-btn" data-filter="web">Web Apps</button>
+          <button class="filter-btn" data-filter="mobile">Mobile & UI/UX</button>
+          <button class="filter-btn" data-filter="system">Software & Systems</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Luzzio E-Commerce Platform -->
+          <div class="project-card" data-category="ecommerce web">
+            <div class="project-card-header">
+              <div class="project-tag">Clothing Store E-Commerce</div>
+              <div class="project-links">
+                <a href="https://github.com/SriharanKarthigesu" target="_blank" rel="noopener noreferrer" class="icon-link" title="Source Code" aria-label="GitHub Code">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+                <a href="#" class="icon-link" title="Live Preview" aria-label="Live Preview">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Luzzio E-Commerce Platform</h3>
+            <p class="project-description">
+              A full-stack modern clothing store e-commerce platform built with React and Node.js. Features a fast product browsing experience, catalog management, shopping cart operations, MongoDB database integration, and deployment on Vercel.
+            </p>
+            <div class="project-tech">
+              <span>React</span>
+              <span>Vite</span>
+              <span>Node.js</span>
+              <span>Express.js</span>
+              <span>MongoDB</span>
+              <span>Mongoose</span>
+              <span>Vercel</span>
+            </div>
+          </div>
+
+          <!-- Project 2: MediCare Plus -->
+          <div class="project-card" data-category="system">
+            <div class="project-card-header">
+              <div class="project-tag">Healthcare Desktop System</div>
+              <div class="project-links">
+                <a href="https://github.com/SriharanKarthigesu" target="_blank" rel="noopener noreferrer" class="icon-link" title="Source Code" aria-label="GitHub Code">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+                <a href="#" class="icon-link" title="Live Preview" aria-label="Live Preview">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">MediCare Plus – Patient Management</h3>
+            <p class="project-description">
+              Healthcare service provider management application built in Java Swing. Enables comprehensive patient and doctor record management (Add, Update, Remove), appointment scheduling and tracking, automated patient & doctor notifications, and monthly operational reports.
+            </p>
+            <div class="project-tech">
+              <span>Java</span>
+              <span>Java Swing</span>
+              <span>OOP Architecture</span>
+              <span>Appointment Engine</span>
+              <span>Monthly Reports</span>
+            </div>
+          </div>
+
+          <!-- Project 3: TorqMode -->
+          <div class="project-card" data-category="web">
+            <div class="project-card-header">
+              <div class="project-tag">Vehicle Accessories Web App</div>
+              <div class="project-links">
+                <a href="https://github.com/SriharanKarthigesu" target="_blank" rel="noopener noreferrer" class="icon-link" title="Source Code" aria-label="GitHub Code">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+                <a href="#" class="icon-link" title="Live Preview" aria-label="Live Preview">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">TorqMode</h3>
+            <p class="project-description">
+              A comprehensive vehicle accessories web application engineered for automotive enthusiasts. Features dynamic part filtering, clean UI/UX layout, responsive catalog browsing, and an intuitive checkout flow.
+            </p>
+            <div class="project-tech">
+              <span>UI/UX Design</span>
+              <span>Wireframing</span>
+              <span>Responsive Web</span>
+              <span>HTML5/CSS3</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+
+          <!-- Project 4: Melt -->
+          <div class="project-card" data-category="mobile">
+            <div class="project-card-header">
+              <div class="project-tag">Food Delivery App</div>
+              <div class="project-links">
+                <a href="https://github.com/SriharanKarthigesu" target="_blank" rel="noopener noreferrer" class="icon-link" title="Source Code" aria-label="GitHub Code">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+                <a href="#" class="icon-link" title="Live Preview" aria-label="Live Preview">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Melt</h3>
+            <p class="project-description">
+              A mouth-watering mobile food delivery application crafted with high-fidelity interactive prototyping, user research, and sleek mobile-first UI components to maximize user delight and ordering speed.
+            </p>
+            <div class="project-tech">
+              <span>Mobile-Optimized</span>
+              <span>Prototyping</span>
+              <span>Design Systems</span>
+              <span>User Research</span>
+              <span>Figma</span>
+            </div>
+          </div>
+
+          <!-- Project 5: Sporty -->
+          <div class="project-card" data-category="ecommerce">
+            <div class="project-card-header">
+              <div class="project-tag">Sports E-Commerce</div>
+              <div class="project-links">
+                <a href="https://github.com/SriharanKarthigesu" target="_blank" rel="noopener noreferrer" class="icon-link" title="Source Code" aria-label="GitHub Code">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+                <a href="#" class="icon-link" title="Live Preview" aria-label="Live Preview">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Sporty</h3>
+            <p class="project-description">
+              Developed a sports-focused e-commerce web application featuring a categorized homepage across 4 sports disciplines, interactive product purchase flows, and an intuitive sitemap architecture.
+            </p>
+            <div class="project-tech">
+              <span>HTML5</span>
+              <span>Modern CSS</span>
+              <span>JavaScript</span>
+              <span>Purchase Flow</span>
+              <span>Sitemap UI</span>
+            </div>
+          </div>
+
+          <!-- Project 6: IBM Education App -->
+          <div class="project-card" data-category="mobile">
+            <div class="project-card-header">
+              <div class="project-tag">Education Mobile App</div>
+              <div class="project-links">
+                <a href="https://github.com/SriharanKarthigesu" target="_blank" rel="noopener noreferrer" class="icon-link" title="Source Code" aria-label="GitHub Code">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+                <a href="#" class="icon-link" title="Live Preview" aria-label="Live Preview">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">IBM - Education App</h3>
+            <p class="project-description">
+              Transformed the desktop IBM portal into an education-focused mobile app using Figma and Photoshop. Streamlined the course search process, reduced discovery time by 40%, and elevated user satisfaction.
+            </p>
+            <div class="project-tech">
+              <span>Figma</span>
+              <span>Photoshop</span>
+              <span>-40% Search Time</span>
+              <span>Wireframing</span>
+              <span>UX Overhaul</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline / Milestones Section -->
+    <section class="section bg-tint" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-tag">Career & Education</p>
+          <h2 class="section-title">Experience & Milestones</h2>
+          <p class="section-subtitle">My professional journey in UI/UX engineering, academic degrees, and foundational background.</p>
+        </div>
+
+        <div class="timeline">
+          <!-- Item 1: Freelancing UI/UX -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">June 2024 - Present</span>
+              <h3 class="timeline-title">Freelancing UI/UX</h3>
+              <p class="timeline-subtitle">Independent UI/UX Engineer</p>
+              <p class="timeline-desc">
+                Partnering with product teams and founders to deliver end-to-end UX research, wireframing, component-driven design systems, and responsive frontend prototypes.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 2: Tech Venturas Global -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">June 2023 - June 2024 (12 Months)</span>
+              <h3 class="timeline-title">UI/UX Engineer Intern</h3>
+              <p class="timeline-subtitle">Tech Venturas Global (Pvt.) Ltd</p>
+              <p class="timeline-desc">
+                Contributed to production design systems, conducted user interviews and usability testing, built interactive Figma prototypes, and worked alongside engineers to ensure faithful UI implementation.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 3: SLIIT Undergraduate -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2025 - Present</span>
+              <h3 class="timeline-title">BSc (Hons) Computer Science (Undergraduate)</h3>
+              <p class="timeline-subtitle">Sri Lanka Institute of Information Technology (SLIIT) • Affiliated with University of Bedfordshire, UK</p>
+              <p class="timeline-desc">
+                Deepening core foundations in Software Architecture, Data Structures, Algorithms, Web Engineering, and Human-Computer Interaction (HCI).
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 4: IIT Certificate -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Higher Education</span>
+              <h3 class="timeline-title">Certificate of Higher Education (Business Information System)</h3>
+              <p class="timeline-subtitle">Informatics Institute of Technology (IIT), Sri Lanka • Affiliated with University of Westminster, UK</p>
+              <p class="timeline-desc">
+                Solid academic grounding in information systems, business process modeling, systems design, and technology management.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 5: Royal College -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Secondary Education</span>
+              <h3 class="timeline-title">GCE Advanced Level & Ordinary Level</h3>
+              <p class="timeline-subtitle">Royal College Colombo - 07 (Commerce Stream)</p>
+              <p class="timeline-desc">
+                Completed secondary school education at Royal College Colombo - 07 with a focus on commerce, analytical reasoning, and extracurricular activities.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-tag">Connect</p>
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">Interested in collaborating on a design project or looking for a UI/UX Engineer? Reach out anytime!</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: Info & Copy Email / Phone -->
+          <div class="contact-info-card">
+            <h3>Let's create exceptional user experiences together.</h3>
+            <p>
+              Whether you need end-to-end product design, high-fidelity prototypes, or frontend development, I am open to freelance collaborations and exciting full-time opportunities.
+            </p>
+
+            <div class="contact-methods">
+              <!-- Email -->
+              <div class="contact-method-item">
+                <div class="method-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div>
+                  <span class="method-label">Email</span>
+                  <div class="email-copy-wrapper">
+                    <a href="mailto:karthi.sriharan@gmail.com" class="method-value" id="email-address">karthi.sriharan@gmail.com</a>
+                    <button class="copy-btn" id="copy-email-btn" title="Copy email to clipboard">
+                      <span id="copy-btn-text">Copy</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Phone -->
+              <div class="contact-method-item">
+                <div class="method-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <div>
+                  <span class="method-label">Phone / WhatsApp</span>
+                  <div class="email-copy-wrapper">
+                    <a href="tel:+94778379372" class="method-value" id="phone-number">+94 77 837 9372</a>
+                    <button class="copy-btn" id="copy-phone-btn" title="Copy phone to clipboard">
+                      <span id="copy-phone-text">Copy</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- LinkedIn -->
+              <div class="contact-method-item">
+                <div class="method-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </div>
+                <div>
+                  <span class="method-label">LinkedIn</span>
+                  <div class="email-copy-wrapper">
+                    <a href="https://www.linkedin.com/in/sriharan-karthigesu-2919591bb/" target="_blank" rel="noopener noreferrer" class="method-value">Sriharan Karthigesu</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- GitHub -->
+              <div class="contact-method-item">
+                <div class="method-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </div>
+                <div>
+                  <span class="method-label">GitHub</span>
+                  <div class="email-copy-wrapper">
+                    <a href="https://github.com/SriharanKarthigesu" target="_blank" rel="noopener noreferrer" class="method-value">SriharanKarthigesu</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Location -->
+              <div class="contact-method-item">
+                <div class="method-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+                <div>
+                  <span class="method-label">Location</span>
+                  <span class="method-value">Colombo - 07, Sri Lanka (Available Globally / Remote)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Contact Form -->
+          <div class="contact-form-card">
+            <form id="contact-form" onsubmit="handleFormSubmit(event)">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" required placeholder="John Doe" />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" required placeholder="john@example.com" />
+              </div>
+
+              <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" rows="4" required placeholder="Hello Sriharan, I would like to discuss a project..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">
+                <span>Send Message</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
+              <p class="form-notice" id="form-feedback"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <p>© <span id="current-year"></span> Sriharan Karthigesu. All rights reserved.</p>
+      </div>
+
+      <div class="footer-right">
+        <a href="#hero" class="back-to-top" aria-label="Back to top">
+          <span>Back to Top</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
